@@ -13,7 +13,7 @@
         </ul>
     </div>
 
-    {{-- menu in bottom --}}
+    {{-- menus in bottom --}}
     <x-navigation.sidenavparts.nav-bottom-options />
 
 </div>

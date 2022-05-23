@@ -1,6 +1,6 @@
 {{-- Optional Logo --}}
 <x-slot name="logo">
-    <a href="{{ route('/') }}">
+    <a href="{{ route('/home') }}">
         <div class="h-20 pt-10 w-full flex items-center">
             <x-common.application-logo class="block h-16 w-auto mx-auto" />
         </div>

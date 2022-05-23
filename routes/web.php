@@ -16,8 +16,12 @@ use PHPUnit\Framework\MockObject\Rule\Parameters;
 */
 
 Route::get('/', function () {
-    return view('webpages.welcome');
+    return view('info');
 })->name('/');
+
+Route::get('/home', function () {
+    return view('webpages.welcome');
+})->name('/home');
 
 Route::middleware([
     'auth:sanctum',

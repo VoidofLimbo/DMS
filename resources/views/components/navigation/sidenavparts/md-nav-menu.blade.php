@@ -1,3 +1,6 @@
+{{-- can be removed --}}
+
+
 <div class="w-64 z-40 absolute bg-gray-800 shadow md:h-full flex-col justify-between transition duration-150 ease-in-out"
     id="mobile-nav">
     <button aria-label="toggle sidebar" id="openSideBar"

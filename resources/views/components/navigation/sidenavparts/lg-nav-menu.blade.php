@@ -1,3 +1,6 @@
+{{-- can be removed --}}
+
+
 <div
     class="w-64 fixed top-0 left-0 bottom-0 md:relative bg-gray-800 shadow md:h-full flex-col justify-between hidden md:flex">
     <div class="px-8">

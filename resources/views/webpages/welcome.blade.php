@@ -11,6 +11,7 @@
     </x-slot>
 
     {{-- can put body here --}}
-    <x-bodies.welcomebody />
+    <x-bodyparts.carousel />
+    <x-bodyparts.testimonials />
 
 </x-public-layout>

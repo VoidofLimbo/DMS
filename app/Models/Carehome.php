@@ -18,7 +18,7 @@ class Carehome extends Model
     protected $fillable = [
         'name',
         'total_patients',
-        'week',
+        'delivery_date',
         'current_stage_id',
         'stage_log_id',
     ];
@@ -38,10 +38,14 @@ class Carehome extends Model
      */
     protected static function booted()
     {
-        static::created(function ($carehome) {
-        $currentValue = Carehome::count();
-        $row = Carehome::where('id', $currentValue)->get();
-        $row->each->update(['stage_log_id' => $currentValue]);
+        static::creating( function() {
+            StageLog::factory()->count(1)->create();
+        });
+
+        static::created(function () {
+            $currentValue = Carehome::count();
+            $row = Carehome::where('id', $currentValue)->get();
+            $row->each->update(['stage_log_id' => $currentValue]);
         });
     }
 

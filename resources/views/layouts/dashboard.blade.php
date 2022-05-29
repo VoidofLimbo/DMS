@@ -29,7 +29,7 @@
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
 
-<body class="font-sans antialiased">
+<body class="font-sans antialiased bg-slate-800">
     {{-- will be useful to display messages attached with session if requested by client --}}
     <x-jet-banner />
 
@@ -39,7 +39,7 @@
             <x-navigation.sidenav />
 
             {{-- body --}}
-            <div class="md:ml-64 w-full bg-slate-800">
+            <div class="md:ml-64 w-full">
 
                 {{-- if there is header put it here --}}
                 @if (isset($header))
@@ -53,7 +53,7 @@
                 @endif
 
                 <!-- rest of the page Content -->
-                <main class="relative pt-20 bg-slate-800 min-h-screen h-full">
+                <main class="relative pt-20">
                     {{ $slot }}
                 </main>
             </div>

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('total_patients');
-            $table->integer('week');
+            $table->date('delivery_date');
             $table->foreignId('current_stage_id')->references('id')->on('carehome_stages')->cascadeOnDelete();
             $table->foreignId('stage_log_id')->default(1)->references('id')->on('stage_logs')->cascadeOnDelete();
             $table->timestamps();

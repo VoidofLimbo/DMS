@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Carehome;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -24,10 +25,11 @@ class CarehomeFactory extends Factory
      */
     public function definition()
     {
+        $today = Carbon::now();
         return [
             'name' => $this->faker->name() . ' Carehome',
             'total_patients' => rand(10,60),
-            'week' => rand(1,4),
+            'delivery_date' => $today->addDays(rand(1,100)),
             'current_stage_id' => 1,
         ];
     }

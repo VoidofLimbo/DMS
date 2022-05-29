@@ -23,7 +23,8 @@
     {{ __('Dashboard') }}
 
     {{-- !!! | make it dynamic later | !!! --}}
-    <x-slot name="changes"> 5 </x-slot>
+
+    {{-- <x-slot name="changes"> 5 </x-slot> --}}
 </x-navigation.sidenavparts.nav-menu-item>
 
 {{-- Formatted menu item Carehome management --}}

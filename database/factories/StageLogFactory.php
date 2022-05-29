@@ -27,6 +27,7 @@ class StageLogFactory extends Factory
     {
         return [
             'RxIN' => now(),
+            'Notes' => $this->faker->text(200),
         ];
     }
 }

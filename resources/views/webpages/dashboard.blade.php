@@ -18,7 +18,7 @@
 
     <!-- remove class [ border-dashed border-2 border-gray-300 ] to remove dotted border -->
     <div class="w-full h-screen rounded">
-        WOW
+        @livewire('weekly-table')
     </div>
 
     {{-- script for passing data from php to javascript --}}

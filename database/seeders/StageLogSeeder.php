@@ -15,6 +15,6 @@ class StageLogSeeder extends Seeder
      */
     public function run()
     {
-        StageLog::factory()->count(10)->create();
+
     }
 }

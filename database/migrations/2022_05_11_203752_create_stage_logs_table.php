@@ -23,6 +23,7 @@ return new class extends Migration
             $table->timestamp('CHECKED')->nullable();
             $table->timestamp('FINALCHECKED')->nullable();
             $table->timestamp('DELIVERED')->nullable();
+            $table->string('Notes')->nullable();
             $table->softDeletes();
         });
     }
